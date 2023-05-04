@@ -5,7 +5,7 @@ const Answer = () => {
     return (
         <div style={{fontSize:'30px'}} className='w-75 mx-5 mt-5'>
 
-            1. Tell us the differences between uncontrolled and controlled components.
+            1. Tell us the differences between uncontrolled and controlled components..
             <br />
             <br />
             Answer: <br />
