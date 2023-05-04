@@ -39,9 +39,9 @@ const Header = () => {
                             {/* --------------------- */}
 
 
-                 <div>
+                 {/* <div>
                  <nav className='d-flex gap-5'>
-                                <ul className='d-flex gap-5'>
+                                <ul className='d-flex gap-5 text-decoration-none'>
                                     <li>
                                         <NavLink to="/" exact activeClassName="fw-bold">
                                             Home
@@ -59,15 +59,18 @@ const Header = () => {
                                     </li>
                                 </ul>
                             </nav>
-                 </div>
+                 </div> */}
 
 
 
 
 
-                            {/* <Link style={{ textDecoration: 'none' }} to='/'>Home</Link>
+                             <Link style={{ textDecoration: 'none' }} to='/'>Home</Link>
 
-                            <Link style={{ textDecoration: 'none' }} to='/answer'>Blog</Link> */}
+                            <Link style={{ textDecoration: 'none' }} to='/answer'>Blog</Link>
+
+                            
+                            <Link style={{ textDecoration: 'none' }} to='/about'>About</Link>
 
                             {/* --------------------- */}
 
@@ -76,9 +79,7 @@ const Header = () => {
 
                         {user ?
 
-                            // <Image className='rounded-circle' style={{ width: '40px' }} src="https://i0.wp.com/newdoorfiji.com/wp-content/uploads/2018/03/profile-img-1.jpg?ssl=1" fluid /> :
-                            // ""
-
+                     
                             <Image title={user.displayName} className='rounded-circle' style={{ width: '40px' }} src={user.photoURL} fluid /> :
                             ""
 
