@@ -42,21 +42,46 @@ const Home = () => {
             {/* home banner */}
 
             <Container>
-                <div className='d-flex bg-dark border rounded shadow mt-5'>
 
-                    <img src={banner} alt="" />
 
-                    <div>
-                        <h1 className='fw-bold' style={{ fontSize: '70px', padding: '30px', marginTop: '20px' }}><span style={{ color: 'red' }}>Inspiration</span> <span style={{ color: 'white' }}>for the master in you.</span></h1>
 
-                        <Link to='/about'>  <button style={{ backgroundColor: 'yellow', fontSize:'30px', marginLeft: '30px' }} className='rounded shadow fw-bold'>Read about the latest culinary trends</button>
-                        </Link>
+                {/* ------------------ */}
 
+
+                <div className="card mb-3 bg-dark shadow" style={{ width: '100%', marginTop: '100px' }}>
+                    <div className="row g-0">
+                        <div className="col-md-6">
+                            <img src={banner} className="img-fluid rounded-start" alt="..." />
+                        </div>
+                        <div className="col-md-6">
+                            <div className="card-body">
+
+
+                                <div>
+                                    <h1 className='fw-bold' style={{ fontSize: '70px', padding: '30px' }}><span style={{ color: 'red' }}>Inspiration</span> <span style={{ color: 'white' }}>for the master in you.</span></h1>
+
+                                    <Link to='/about'>  <button style={{ backgroundColor: 'yellow', fontSize: '30px', marginLeft: '30px' }} className='rounded shadow fw-bold'>Read about the latest culinary trends</button>
+                                    </Link>
+
+                                </div>
+
+
+                            </div>
+                        </div>
                     </div>
-
-
-
                 </div>
+
+
+
+                {/* ------------------ */}
+
+
+
+
+
+
+
+          
             </Container>
 
 
