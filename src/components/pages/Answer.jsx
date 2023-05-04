@@ -35,7 +35,7 @@ const Answer = () => {
             <br />
             Answer: <br />
 
-            NodeJS is the package, which provides the JavaScript run-time environment, whereas Express is a framework that sits on top of NodeJS and helps us to handle requests and responses.
+            NodeJS is the package, which provides the JavaScript run-time environment, whereas Express is a framework that sits on top of NodeJS and helps us to handle requests and responses....
 
             <br />
             <br />
