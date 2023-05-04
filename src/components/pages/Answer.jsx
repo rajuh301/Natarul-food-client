@@ -45,7 +45,7 @@ const Answer = () => {
             <br />
             
             Answer: <br />
-            Custom React JS hooks offer reusability as when a custom hook is created, it can be reused easily, which makes the code cleaner and reduces the time to write the code. 
+            Custom React JS hooks offer reusability as when a custom hook is created, it can be reused easily, which makes the code cleaner and reduces the time to write the code... 
 
 
 
