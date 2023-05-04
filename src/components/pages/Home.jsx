@@ -49,7 +49,7 @@ const Home = () => {
                     <div>
                         <h1 className='fw-bold' style={{ fontSize: '70px', padding: '30px', marginTop: '20px' }}><span style={{ color: 'red' }}>Inspiration</span> <span style={{ color: 'white' }}>for the master in you.</span></h1>
 
-                        <Link>  <button style={{ backgroundColor: 'yellow', fontSize:'30px', marginLeft: '30px' }} className='rounded shadow fw-bold'>Read about the latest culinary trends</button>
+                        <Link to='/about'>  <button style={{ backgroundColor: 'yellow', fontSize:'30px', marginLeft: '30px' }} className='rounded shadow fw-bold'>Read about the latest culinary trends</button>
                         </Link>
 
                     </div>

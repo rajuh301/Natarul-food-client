@@ -5,9 +5,10 @@ import Details from "../pages/Details";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import PrivateRoute from "./PrivateRoute";
-import DetailsLayout from "../layout/detailsLayout";
+import DetailsLayout from "../layout/DetailsLayout";
 import ErrorPage from "../pages/ErrorPage";
 import Answer from "../pages/Answer";
+import ReadAboutChef from "../pages/ReadAboutChef";
 
 
 
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch('http://localhost:5000/cheap')
+                loader: () => fetch('https://natural-food-server-rajuh301.vercel.app/cheap')
             },
 
 
@@ -40,7 +41,11 @@ const router = createBrowserRouter([
             {
                 path:'answer',
                 element: <Answer></Answer>
+            },
 
+            {
+                path: '/about',
+                element: <ReadAboutChef></ReadAboutChef>
             }
 
 
@@ -55,7 +60,7 @@ const router = createBrowserRouter([
             {
                 path: ':id',
                 element: <PrivateRoute><Details></Details></PrivateRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/cheap/${params.id}`)
+                loader: ({params}) => fetch(`https://natural-food-server-rajuh301.vercel.app/cheap/${params.id}`)
             }
 
        

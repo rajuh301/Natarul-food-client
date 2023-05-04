@@ -5,11 +5,11 @@ import { useLoaderData } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Footer from './Footer';
 import Rating from 'react-rating';
-import { FaBeer, FaRegStar, FaStar } from 'react-icons/fa';
-import {ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import { FaBeer, FaHeart, FaRegStar, FaStar } from 'react-icons/fa';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-  const diffToast = () => {
+const diffToast = () => {
     toast("Food added!");
 }
 
@@ -28,7 +28,7 @@ const Details = () => {
     }
 
 
-   
+
     console.log(ids)
 
 
@@ -59,18 +59,23 @@ const Details = () => {
                                     placeholderRating={user_rating}
                                     readonly
 
-                                    emptySymbol={<FaRegStar style={{color:'red'}}></FaRegStar>}
+                                    emptySymbol={<FaRegStar style={{ color: 'red' }}></FaRegStar>}
 
                                     placeholderSymbol={<FaStar></FaStar>}
-                                    fullSymbol={<FaStar style={{color:'red'}}></FaStar>}
+                                    fullSymbol={<FaStar style={{ color: 'red' }}></FaStar>}
 
                                 />
+                                <br />
+
+
+
                                 <ToastContainer></ToastContainer>
 
 
                             </div>
 
 
+                            <small><span><FaHeart style={{color:'red'}}></FaHeart></span> {experience}00</small>
                         </div>
                     </div>
 
